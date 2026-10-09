@@ -1,0 +1,65 @@
+# Funda Nathi
+
+A calm, dyslexia-friendly learning app prototype for young readers. "Funda Nathi" means "Learn with us". The prototype has three activities, each with one goal per screen: **Listen**, **Draw** and **Play**.
+
+## Features
+
+### Listen
+- A short story shown in numbered parts, with a progress bar.
+- **Read aloud** speaks the text and highlights each word as it is read.
+- **Simplify** switches to shorter sentences.
+
+### Draw
+- Trace the letters a, b, d, p, q, s and m with a finger or mouse.
+- Hearing the letter's sound when you start tracing.
+- Four pen colours, plus Undo and Start again.
+- Tracings are saved automatically in the browser.
+
+### Play
+- A "which letter says...?" game that helps with b/d/p/q mix-ups.
+- A spelling round that accepts phonetic attempts and then shows the correct spelling (for example "fotograf" for "photograph").
+- Gentle feedback only: soft chimes and "Almost, let's try again", never a buzzer.
+
+### Accessibility and comfort
+- Font choice: Lexend, Atkinson Hyperlegible or Verdana.
+- Night light mode for less glare.
+- Big touch targets, one goal per screen, and a Home button always in the top-left.
+- Spoken prompt if the learner is stuck for 15 seconds.
+- A rest reminder after 20 minutes.
+- Reduced motion is respected.
+- Star rewards, saved between visits.
+
+## Project structure
+
+```
+FUNDANATHI_PROTOTYPE/
+├── index.html   # page structure and app logic (JavaScript)
+├── style.css    # all styling
+└── README.md
+```
+
+## How to run
+
+1. Download or clone this folder.
+2. Open `index.html` in a modern browser (Chrome, Edge, Safari or Firefox).
+   - Or, in VS Code, right-click `index.html` and choose **Open with Live Server**.
+3. Turn your sound on for the voice and chimes.
+
+No installation or build step is needed. An internet connection is only used to load the Lexend and Atkinson fonts from Google Fonts.
+
+## Prototype controls
+
+The strip at the bottom of the page is for demos only:
+- **Show 20-minute break** shows the rest screen straight away.
+- **Simulate stuck for 15 seconds** triggers the "stuck" help prompt.
+- **Reset stars** sets the star count back to 0.
+
+Remove the `.proto` block in `index.html` before sharing the app with learners.
+
+## Data and privacy
+
+Everything is stored in the browser's `localStorage` (stars and letter tracings). No data is sent anywhere.
+
+## Browser notes
+
+- Read-aloud and letter sounds use the browser's built-in speech voices, so they sound different on
